@@ -1,0 +1,27 @@
+{
+  "codebook": "codebook.md",
+  "section": "prompts_A1",
+  "data": "snake-sample.csv",
+  "coder": "demo",
+  "port": 3000,
+  "autoAdvance": true,
+  "display": {
+    "idColumn": "row_id",
+    "meta": ["student_id", "condition", "version", "run_status", "is_final", "prompt_words"],
+    "text": [
+      { "column": "instructions", "label": "Instructions", "markdown": true, "collapsed": true },
+      { "column": "prompt", "label": "Prompt", "markdown": true }
+    ]
+  },
+  "groups": [
+    { "title": "Requirements", "range": "R1–R6", "match": "^req_A1-R" },
+    { "title": "Decisions", "range": "D1–D5", "match": "^req_A1-D" },
+    { "title": "Prompt qualities", "match": "*" }
+  ],
+  "fields": {
+    "decision_ownership": { "widget": "buttons" },
+    "note_student_decisions": { "label": "Decisions the student made", "rows": 2, "placeholder": "What did the student decide explicitly?" },
+    "note_agent_decisions": { "label": "Decisions left to the agent", "rows": 2, "placeholder": "What did the student leave open?" },
+    "memo": { "label": "Memo", "rows": 3, "placeholder": "Anything that does not fit the codebook…" }
+  }
+}

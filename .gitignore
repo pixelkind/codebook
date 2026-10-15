@@ -1,0 +1,7 @@
+node_modules/
+data*.csv
+*.bak
+*.tmp
+.DS_Store
+# real study data (student material) — never commit
+prompts_*.csv

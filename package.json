@@ -1,0 +1,26 @@
+{
+  "name": "codebook",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local browser-based tool for qualitative coding of CSV rows against a Markdown codebook",
+  "main": "codebook.js",
+  "bin": {
+    "codebook": "codebook.js"
+  },
+  "scripts": {
+    "start": "node codebook.js codebook.config.json",
+    "example": "node codebook.js examples/codebook.config.json",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^7.0.3",
+    "csv-stringify": "^6.9.0",
+    "dompurify": "^3.4.17",
+    "express": "^5.3.0",
+    "marked": "^18.1.1"
+  }
+}

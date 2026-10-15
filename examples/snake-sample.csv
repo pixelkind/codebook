@@ -1,0 +1,71 @@
+row_id,student_id,condition,version,continues_from_version,run_status,is_final,prompt_words,instructions,prompt,req_A1-R1,req_A1-R2,req_A1-R3,req_A1-R4,req_A1-R5,req_A1-R6,req_A1-D1,req_A1-D2,req_A1-D3,req_A1-D4,req_A1-D5,constraints,acceptance_criteria,over_specification,decision_ownership,note_student_decisions,note_agent_decisions,coder,memo
+r_0001,s_0400,A,1,,completed,true,140,"### Task A1: power-ups
+
+Extend the Snake game with **power-ups**. Write one prompt for the coding agent.
+
+- At least two different power-ups
+- Effects are temporary
+- The player can see what is active and when it ends","## Add power-ups to the Snake game
+
+I have a simple Snake game in `index.html` and `snake.js`. Please add power-ups so the game gets more interesting.
+
+Requirements:
+
+- At least two different power-ups, for example a speed boost and a score multiplier
+- A power-up appears on a random free cell every 10–15 seconds
+- Each effect lasts 5 seconds and then expires
+- Show the active power-up and its remaining time above the board
+
+Keep the existing code style and do not add any libraries. The game state currently looks like this:
+
+```js
+const state = {
+  snake: [{ x: 10, y: 10 }],
+  dir: 'right',
+  food: null,
+  score: 0,
+  tickMs: 120,
+};
+```
+
+### Things I have not decided yet
+
+You can choose how the power-ups look and what happens when two are active at the same time.",covered,covered,partial,covered,covered,partial,covered,covered,covered,covered,absent,present,absent,no,mixed,"Types, spawn interval and duration are fixed.",Look and overlap behaviour left open.,example,
+r_0002,s_0407,B,2,1,completed,false,9,"### Task A1: power-ups
+
+Extend the Snake game with **power-ups**. Write one prompt for the coding agent.
+
+- At least two different power-ups
+- Effects are temporary
+- The player can see what is active and when it ends","add powerups to my snake game, make it fun",partial,absent,,,,,,,,,,,,,,,,example,
+r_0003,s_0414,A,1,,completed,true,64,"### Task A1: power-ups
+
+Extend the Snake game with **power-ups**. Write one prompt for the coding agent.
+
+- At least two different power-ups
+- Effects are temporary
+- The player can see what is active and when it ends","Please add two power-ups to the game:
+
+1. **Ghost**: the snake can pass through itself for 4 seconds.
+2. **Slow-mo**: the game runs at half speed for 6 seconds.
+
+A small coloured bar under the score shows the active power-up and shrinks until it ends. If a second power-up is picked up, it replaces the first one. Don't touch the collision code for walls.",,,,,,,,,,,,,,,,,,,
+r_0004,s_0421,B,2,1,completed,true,32,"### Task A1: power-ups
+
+Extend the Snake game with **power-ups**. Write one prompt for the coding agent.
+
+- At least two different power-ups
+- Effects are temporary
+- The player can see what is active and when it ends","Add power-ups. Use a `PowerUp` class with `apply(state)` and `revert(state)`, store them in a `Map<string, PowerUp>`, spawn with `setInterval(spawn, 12000)` and render with `ctx.fillRect` in `#ff0`. Make sure `npm test` still passes.",maybe,,,,,,,,,,,,,yes,,,,example,Very implementation-heavy.
+r_0005,s_0428,A,1,,completed,true,48,"### Task A1: power-ups
+
+Extend the Snake game with **power-ups**. Write one prompt for the coding agent.
+
+- At least two different power-ups
+- Effects are temporary
+- The player can see what is active and when it ends","I want power-ups in Snake.
+
+- one that makes you faster
+- one that gives double points
+
+They should only last a little while. Show something on screen while they are active. When it is done, check that the normal game still works the same way as before.",,,,,,,,,,,,,,,,,,,
