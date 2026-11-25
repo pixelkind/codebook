@@ -173,3 +173,4 @@ body{background:#f3f4f6}
 body:has(.app.dark){background:#0e1115}
 .sheet.about dl.files dd{display:block}
 .sheet.about dl.files dt{color:var(--tx3)}
+.opt{width:auto;min-width:80px;white-space:nowrap}
